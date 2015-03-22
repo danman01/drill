@@ -126,17 +126,17 @@ div.sphinxsidebar li.toctree-l3 > a {
   #menu ul li.logo {
     padding-left: 30px;
   }
-  .expand-toc-icon {
+  #menu ul li.expand-toc-icon {
     display: none;
   }
 
 }
 @media (max-width: 1024px) {
-    .expand-toc-icon {
+    #menu ul li.expand-toc-icon {
         display: block;
-        padding-top: 10px;
-        padding-right: 10px;
+        /*padding-right: 10px;*/
         color: white;
+        float: left;
     }
 
     .expand-toc-icon:hover,
@@ -146,7 +146,7 @@ div.sphinxsidebar li.toctree-l3 > a {
     }
 
     #menu ul li.logo {
-      padding-left: 70px;
+      /*padding-left: 70px; */
     }
 
     .int_text .sidebar {
@@ -166,7 +166,7 @@ div.sphinxsidebar li.toctree-l3 > a {
 
 @media (max-width: 1393px) {
     #menu ul li.logo {
-      padding-left: 30px;
+      /*padding-left: 30px;*/
     }
 }
 
