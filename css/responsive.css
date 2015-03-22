@@ -1,0 +1,17 @@
+@media (min-width: 1024px) {
+  nav.breadcrumbs
+  {
+    margin-left:293px;
+  }
+}
+@media (max-width: 1024px) {
+  nav.breadcrumbs {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 1393px) {
+    #menu ul li.logo {
+      padding-left: 30px;
+    }
+}
