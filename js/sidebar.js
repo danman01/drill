@@ -3,12 +3,15 @@ $(function(){
 })
 
 function watchDocTocClicks() {
+ $('li.toctree-l1').on('click', function(){
+    make_current(this);
+  })
+
   $('li[class^=toctree]')
   .filter(function(){ 
     return $(this).next('ul').length > 0;
   })
   .on("click", function(){
-    make_current(this);
     $.each( $(this).next("ul"), function(i){
       $(this).toggle("slide");
     })
@@ -16,9 +19,13 @@ function watchDocTocClicks() {
 }
 
 function make_current(that) {
-  $(".current").removeClass("current");
-  var l1 = $(that).parents(".toctree-l1").addClass("current");
+  remove_current();
   $(that).addClass("current");
+  $(that).next('ul').addClass("current");
+}
+
+function remove_current() {
+  $(".current").removeClass("current");
 }
 
 
